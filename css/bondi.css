@@ -1,0 +1,55 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+}
+
+.main-btn,
+.main-btn:hover {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 50rem;
+    padding: 0.375rem 1.5rem;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.navbar {
+    background-color: var(--dark-color);
+
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-toggler {
+    color: white;
+    border: 1px solid white;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+.nav-link {
+    color: white;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: var(--green-color);
+}
+.search {
+    border-left: 2px solid var(--green-color);
+}
+.search svg {
+    color: var(--green-color);
+}
+.hero {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+.hero p {
+}
