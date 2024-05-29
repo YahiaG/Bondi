@@ -3,6 +3,7 @@
     --green-color: #33d1cc;
     --red-color: #ff3150;
     --yellow-color: #ffc400;
+    --alt-bg-section: #eff7fa;
 }
 
 .main-btn,
@@ -12,7 +13,16 @@
     border-radius: 50rem;
     padding: 0.375rem 1.5rem;
 }
-
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -33,7 +43,7 @@ body {
 .navbar-toggler[aria-expanded="true"] {
     border-color: var(--green-color);
 }
-.nav-link {
+.navbar .nav-link {
     color: white;
 }
 .navbar .nav-link:hover,
@@ -51,5 +61,91 @@ body {
     background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
-.hero p {
+.features .icon svg:first-child {
+    color: var(--alt-bg-section);
+}
+.features .icon svg:last-child {
+    color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features h3 {
+    color: var(--yellow-color);
+}
+.our-work {
+    background-color: var(--alt-bg-section);
+}
+.our-work__nav .nav-link {
+    color: black;
+}
+.our-work__nav .nav-link:hover,
+.our-work__nav .nav-link.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work .img-holder {
+    overflow: hidden;
+}
+.our-work .info {
+    background-color: #33d1ccc9;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 5px;
+    left: -100%;
+    transition: 1s;
+}
+.our-work .img-holder:hover .info {
+    left: 5px;
+}
+.team {
+    background-color: var(--alt-bg-section);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team h3 {
+    background-color: var(--green-color);
+    color: white;
+}
+.project {
+    background-color: var(--dark-color);
+}
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="email"]:focus {
+    outline: none;
+}
+.sub-btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+footer {
+    background-color: var(--dark-color);
+}
+footer .designer {
+    color: var(--green-color);
+}
+footer .brand {
+    color: var(--yellow-color);
+}
+footer svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.fa-facebook-f {
+    background-color: #1877f2;
+}
+.fa-twitter {
+    background-color: #1da1f2;
+}
+.fa-linkedin {
+    background-color: #0a66c2;
+}
+.fa-youtube {
+    background-color: #ff0000;
 }
